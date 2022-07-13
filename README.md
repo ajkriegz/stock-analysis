@@ -23,7 +23,6 @@ If Cells(i + 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers
 ```
 
 These numbers were then used to calculate the quotient of the ending price for a given ticker and its starting price, then turning that number into a percentage, as shown by `Cells(4 + y, 3).Value = tickerEndingPrices(y) / tickerStartingPrices(y) - 1`
----
 
 Below are the refactored script's execution times:
 
@@ -46,7 +45,6 @@ The refactored script is almost ten times faster than the original. For twelve s
 Refactoring code can be a largely beneficial process. It improves program efficiency, restructures poorly designed code structure, improves readability and cohesion, and offers a chance to reduce the number of bugs in the code. Additionally, it provides an excellent opportunity for peer review.
 
 However, it is not always ideal to refactor code. If enough time has passed, it will be more difficult to remember why or how a section of code works. The developer is also spending additional time and energy on something that is already working, and may in fact introduce more bugs to the program if too little time is allotted for testing.
----
 
 In the case of this analysis, the subroutine's efficiency was increased and may reduce large amounts of processing time in the future. However, for the current scope of stocks, saving less than a second off program execution may be estimated to be a waste of resources in a manager's eyes.
 
